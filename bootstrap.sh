@@ -42,3 +42,5 @@ while [ ! -d /var/lib/tomcat6/webapps/taverna-server/WEB-INF ]; do
 done
 sudo service tomcat6 stop
 sudo cp -fR config/var/lib/tomcat6/webapps/taverna-server/WEB-INF/* /var/lib/tomcat6/webapps/taverna-server/WEB-INF/
+sudo cp -fR config/var/lib/tomcat6/conf/Catalina/localhost/* /var/lib/tomcat6/conf/Catalina/localhost/
+sudo chown -R tomcat6:tomcat6 /var/lib/tomcat6
