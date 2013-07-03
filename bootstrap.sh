@@ -20,3 +20,12 @@ rm -rf UnlimitedJCEPolicy
 
 echo -e "\n\n#### 3. Tomcat 6\n\n"
 sudo apt-get -y install tomcat6
+sudo service tomcat6 stop
+
+
+echo -e "\n\n#### 4. AtomHopper (Interaction Service)\n\n"
+sudo wget -O /var/lib/tomcat6/webapps/ah.war http://maven.research.rackspacecloud.com/content/repositories/releases/org/atomhopper/atomhopper/1.2.9/atomhopper-1.2.9.war
+sudo mkdir -p /etc/atomhopper /opt/atomhopper
+sudo cp -fR config/etc/atomhopper/* /etc/atomhopper/
+sudo chown -R tomcat6:tomcat6 /etc/atomhopper/ /opt/atomhopper
+sudo service tomcat6 start
