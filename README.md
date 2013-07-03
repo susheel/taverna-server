@@ -32,7 +32,7 @@ wget --no-check-certificate https://raw.github.com/susheel/taverna-server/master
 ```Shell
 git clone https://github.com/susheel/taverna-server.git
 cd taverna-server
-./bootstrap.sh &>taverna-install.log
+./bootstrap.sh 2>&1 | tee ~/taverna-install.log
 ```
 
 #### VPH-Share specific configuration
