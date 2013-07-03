@@ -13,4 +13,4 @@ sudo apt-get -y install git     # Install git
 git clone https://github.com/susheel/taverna-server.git
 cd taverna-server
 
-./bootstrap.sh &>~/taverna-install.log
+./bootstrap.sh 2>&1 | tee ~/taverna-install.log
