@@ -41,3 +41,4 @@ while [ ! -d /var/lib/tomcat6/webapps/taverna-server/WEB-INF ]; do
   sleep 3
 done
 sudo service tomcat6 stop
+sudo cp -fR config/var/lib/tomcat6/webapps/taverna-server/WEB-INF/* /var/lib/tomcat6/webapps/taverna-server/WEB-INF/
