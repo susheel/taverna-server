@@ -16,3 +16,7 @@ echo -e "\n\n#### 2. Java Cryptography Extensions\n\n"
 unzip config/UnlimitedJCEPolicyJDK7.zip
 sudo cp -f UnlimitedJCEPolicy/*.jar $JAVA_HOME/lib/security/
 rm -rf UnlimitedJCEPolicy
+
+
+echo -e "\n\n#### 3. Tomcat 6\n\n"
+sudo apt-get -y install tomcat6
