@@ -18,19 +18,19 @@ You can install the following tools via the command line with `curl`, `wget` or 
 ### via `curl`
 
 ```Shell
-curl -L https://raw.github.com/susheel/taverna-server/master/install.sh | sh
+curl -L https://raw.github.com/VPH-Share/taverna-server/master/install.sh | sh
 ```
 
 ### via `wget`
 
 ```Shell
-wget --no-check-certificate https://raw.github.com/susheel/taverna-server/master/install.sh -O - | sh
+wget --no-check-certificate https://raw.github.com/VPH-Share/taverna-server/master/install.sh -O - | sh
 ```
 
 ### via `git`
 
 ```Shell
-git clone https://github.com/susheel/taverna-server.git
+git clone https://github.com/VPH-Share/taverna-server.git
 cd taverna-server
 ./bootstrap.sh 2>&1 | tee ~/taverna-install.log
 ```

@@ -10,7 +10,7 @@ sudo apt-get update             # Update package cache
 sudo apt-get -y install git     # Install git
 
 # Clone taverna-server repository
-git clone https://github.com/susheel/taverna-server.git
+git clone https://github.com/VPH-Share/taverna-server.git
 cd taverna-server
 
 ./bootstrap.sh 2>&1 | tee ~/taverna-install.log
