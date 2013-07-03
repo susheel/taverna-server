@@ -37,4 +37,7 @@ echo -e "\n\n#### 5. Taverna Server (2.4.1)\n\n"
 sudo service tomcat6 stop
 sudo wget -O /var/lib/tomcat6/webapps/taverna-server.war https://launchpad.net/taverna-server/2.x/2.4.1/+download/TavernaServer.2.4.1.war
 sudo service tomcat6 start
+while [ ! -d /var/lib/tomcat6/webapps/taverna-server/WEB-INF ]; do
+  sleep 3
+done
 sudo service tomcat6 stop
